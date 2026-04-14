@@ -1,3 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Isso mata a barra de rolagem lateral */
+}
+
+#root {
+  width: 100%;
+}
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -108,4 +126,14 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+}
+.navbar, .hero-content, .contato-container {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#root, .App, body {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
