@@ -1,3 +1,5 @@
+
+
 /* Reset básico para limpar as margens do navegador */
 * {
     margin: 0;
@@ -92,12 +94,6 @@
 
 .card img:hover {
     transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
-}
-.logo img {
-    height: 60px;       /* Ajuste a altura conforme preferir */
-    width: auto;         /* Mantém a proporção da imagem */
-    display: block;      /* Remove espaços vazios indesejados abaixo da imagem */
-    border-radius: 5px;  /* Se quiser arredondar as bordas do logo */
 }
 
 #portfolio {
@@ -239,4 +235,29 @@
     width: 100%;
     height: 200px;
     object-fit: cover; /* Faz a foto preencher o espaço sem distorcer */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Joga o logo pra um lado e os links pro outro */
+    align-items: center;
+    padding: 10px 5%;
+    background-color: #2a1d15; /* Cor amadeirada escura */
+}
+
+.logo-img {
+    height: 60px; /* Ajuste o tamanho conforme sua logo */
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
