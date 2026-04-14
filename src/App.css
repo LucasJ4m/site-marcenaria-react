@@ -299,4 +299,19 @@
     font-size: 1rem;
     padding: 12px;
   }
+
+  
+}
+.hero {
+  width: 100%;
+  min-height: 80vh;
+  /* Troquei .png por .jpg aqui embaixo */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/simulador-de-ambientes-henn.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
 }
