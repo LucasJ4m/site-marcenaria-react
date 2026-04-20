@@ -323,3 +323,31 @@ CSS
   text-align: center;
   color: white;
 }
+.portfolio-footer {
+  text-align: center;
+  margin-top: 50px; /* Dá um espaço legal depois das fotos */
+  padding: 20px;
+}
+
+.portfolio-footer p {
+  color: #fff; /* Ou a cor que combine com seu fundo */
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.btn-instagram {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #E1306C; /* Cor oficial do Insta */
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.btn-instagram:hover {
+  background-color: #b32555;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(225, 48, 108, 0.4);
+}

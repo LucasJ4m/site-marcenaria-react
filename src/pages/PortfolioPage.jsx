@@ -77,10 +77,25 @@ function PortfolioPage() {
             <div className="card-info">
               <h3>{projeto.titulo}</h3>
               <p>{projeto.descricao}</p>
+              
             </div>
           </div>
+          
         ))}
       </div>
+      {/* NOVO BLOCO ABAIXO: */}
+      <div className="portfolio-footer">
+        <p>Gostou dos nossos projetos?</p>
+        <a 
+          href="https://www.instagram.com/wogs_moveispersonalizados?igsh=aGthcmVuNzh4c21r" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="btn-instagram"
+        >
+          Siga-nos no Instagram para ver mais novidades
+        </a>
+      </div>
+
     </section>
   );
 }
