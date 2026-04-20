@@ -1,10 +1,10 @@
 function Portfolio() {
-  // 1. A LISTA DE DADOS (Como se fosse sua planilha de projetos)
+ 
   const meusProjetos = [
-    { id: 1, titulo: "Cozinha Planejada", imagem: "/cozinha.jpg", desc: "Acabamento em MDF Naval" },
+    { id: 1, titulo: "Cozinha Planejada", imagem: "", desc: "Acabamento em MDF Naval" },
     { id: 2, titulo: "Painel Ripado", imagem: "/painel.jpg", desc: "Sala de estar com iluminação LED" },
     { id: 3, titulo: "Armário de Quarto", imagem: "/quarto.jpg", desc: "Portas de correr com espelho" },
-    // Você pode adicionar quantos projetos quiser aqui!
+   
   ];
 
   return (

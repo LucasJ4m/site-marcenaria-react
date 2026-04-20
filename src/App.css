@@ -77,24 +77,53 @@
     display: inline-block;
     margin-top: 20px;
 }
-
-/* Grid de Imagens */
+/* Container principal */
 .grid-projetos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 40px 5%;
+  display: grid;
+  /* Cria colunas que se ajustam sozinhas. 300px é um ótimo tamanho médio */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 20px; 
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.card img {
-    width: 100%;
-    border-radius: 8px;
-    transition: transform 0.3s;
+/* O Card agora é um quadrado ou retângulo fixo */
+.card-projeto {
+  width: 100%;
+  height: 350px; /* Definir uma altura fixa é o segredo da organização */
+  border-radius: 8px;
+  overflow: hidden;
+  /* Mude o fundo para transparente ou o marrom do seu site */
+  background-color: transparent;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  /* Uma borda bem sutil para separar as fotos do fundo */
+  border: 1px solid rgba(255, 255, 255, 0.1); 
+  
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* Sombra mais pesada para combinar com fundo escuro */
 }
 
-.card img:hover {
-    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+.card-projeto:hover {
+  transform: scale(1.02);
 }
+
+.card-projeto img {
+  width: 100%;
+  height: 100%; /* A imagem vai ficar no formato original dela */
+  object-fit: scale-down; /* Teste isso no lugar do cover */
+  display: block;
+  
+  
+  /* Melhora a nitidez em redimensionamentos */
+  image-rendering: high-quality; 
+  -webkit-backface-visibility: hidden; /* Truque técnico para evitar "blur" no Chrome */
+  transform: translateZ(0); /* Força o uso da GPU para renderizar a imagem */
+}
+
+
+
+
 
 #portfolio {
     width: 100%;
@@ -212,30 +241,9 @@
     color: #888;
 }
 
-.grid-projetos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
 
-.card-projeto {
-    background: #fff;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
-}
 
-.card-projeto:hover {
-    transform: translateY(-5px);
-}
-
-.card-projeto img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover; /* Faz a foto preencher o espaço sem distorcer */
-}
+CSS
 
 .navbar {
     display: flex;
