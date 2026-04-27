@@ -132,8 +132,34 @@
     /* Para: rgba(101, 67, 33, 1) -> Marrom madeira */
     background: linear-gradient(to bottom, rgba(43, 24, 16, 1), rgba(101, 67, 33, 1));
     color: white; /* Texto branco costuma ler melhor em fundo marrom */
+    
 }
-
+#portfolio h1 { /* ou h1, conforme estiver no seu HTML */
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+   
+    
+    /* O Gradiente */
+    background: linear-gradient(to right, #ffffff, #b0b0b0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    /* A CORREÇÃO DO CORTE: */
+    line-height: 1.0;      /* Dá altura suficiente para a linha do texto */
+    padding-bottom: 5px;  /* Cria o espaço extra para a base das letras */
+    margin-bottom: 10px;
+    
+    /* Opcional: Melhora a nitidez em alguns navegadores */
+    display: inline-block; 
+}
+#portfolio h1 {
+    color: white;
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5); /* Sombra que projeta o título para frente */
+    font-family: 'Playfair Display', serif; /* Se você tiver uma fonte mais elegante, use aqui */
+}
 .contato {
     padding: 80px 5%;
     background-color: #f4f1ea; /* Um bege clarinho que lembra madeira clara */
