@@ -118,6 +118,7 @@
   /* Melhora a nitidez em redimensionamentos */
   image-rendering: high-quality; 
   -webkit-backface-visibility: hidden; /* Truque técnico para evitar "blur" no Chrome */
+  backface-visibility: hidden;         /* Versão PADRÃO (Adicione esta linha) */
   transform: translateZ(0); /* Força o uso da GPU para renderizar a imagem */
 }
 
@@ -145,6 +146,7 @@
     /* O Gradiente */
     background: linear-gradient(to right, #ffffff, #b0b0b0);
     -webkit-background-clip: text;
+    background-clip: text;               /* Adicione a versão padrão também */
     -webkit-text-fill-color: transparent;
     
     /* A CORREÇÃO DO CORTE: */
